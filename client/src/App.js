@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import Header from './components/Header';
 import AddTodo from './components/AddTodo';
 import store from './store';
+import ListTodos from './components/ListTodos';
 
 class App extends Component {
   render() {
@@ -12,6 +13,7 @@ class App extends Component {
         <div>
           <Header />
           <AddTodo />
+          <ListTodos />
         </div>
       </Provider>
     );
