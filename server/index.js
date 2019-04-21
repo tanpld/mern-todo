@@ -12,6 +12,6 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 // Routes
-app.use('/', todoRoutes);
+app.use('/api/v1/todos', todoRoutes);
 
 app.listen(5555, () => console.log('Server is running on port 5555'));
