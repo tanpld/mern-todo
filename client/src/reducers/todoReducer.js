@@ -34,7 +34,7 @@ export default function(state = initialState, action) {
         ...state,
         todos: state.todos.map(todo => {
           return todo._id === action.payload
-            ? { ...todo, completed: true }
+            ? { ...todo, completed: !todo.completed }
             : todo;
         }),
       };

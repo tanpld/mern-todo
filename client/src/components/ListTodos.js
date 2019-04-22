@@ -9,11 +9,10 @@ class ListTodos extends Component {
   }
   render() {
     const { todos } = this.props;
-    console.log(todos);
     return (
       <ul>
         {todos.map(todo => (
-          <Todo key={todo.id} todo={todo} />
+          <Todo key={todo._id} todo={todo} />
         ))}
       </ul>
     );
