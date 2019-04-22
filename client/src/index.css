@@ -8,18 +8,55 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  background-color: lightblue;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.header h1 {
+  text-transform: uppercase;
+  color: white;
+}
+
+.add-box {
+  text-align: center;
+}
+
+.add-box > input {
+  width: 90%;
+  border: none;
+  outline: none;
+  padding: 0.25rem;
+}
+
+ul li:nth-child(odd) {
+  background-color: white;
+}
+
 ul li {
   position: relative;
-  list-style: none;
+  width: 90%;
 }
 
 ul li.checked {
   text-decoration: line-through;
+  list-style: none;
   color: #ddd;
 }
 

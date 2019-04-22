@@ -12,7 +12,11 @@ class AddTodo extends Component {
   };
 
   render() {
-    return <input type="text" onKeyPress={this.handleSubmit} />;
+    return (
+      <div className="add-box">
+        <input type="text" onKeyPress={this.handleSubmit} />
+      </div>
+    );
   }
 }
 
