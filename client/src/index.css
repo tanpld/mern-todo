@@ -12,3 +12,39 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+ul li {
+  position: relative;
+  list-style: none;
+}
+
+ul li.checked {
+  text-decoration: line-through;
+  color: #ddd;
+}
+
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: salmon;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: -2px;
+  left: -20px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+.close {
+  right: 0;
+  top: 0;
+  padding: 2px 5px 2px 5px;
+  /* background-color: salmon; */
+  color: salmon;
+}
+
+.close:hover {
+  background-color: salmon;
+  color: white;
+}
