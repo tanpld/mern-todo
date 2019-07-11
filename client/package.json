@@ -11,6 +11,9 @@
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0"
   },
+  "resolutions": {
+    "lodash.template": "^4.5.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
