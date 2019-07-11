@@ -12,7 +12,11 @@
     "redux-thunk": "^2.3.0"
   },
   "resolutions": {
-    "lodash.template": "^4.5.0"
+    "lodash.template": "^4.5.0",
+    "lodash": "^4.17.13",
+    "js-yaml": "^3.13.1",
+    "handlebars": "^4.1.2",
+    "axios": "^0.18.1"
   },
   "scripts": {
     "start": "react-scripts start",
